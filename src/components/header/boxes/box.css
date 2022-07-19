@@ -1,0 +1,22 @@
+.box__container {
+  display: block;
+  width: 330px;
+  height: 420px;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  padding: 10px;
+}
+.box_containner__title {
+  font-size: 18px;
+  padding: 2px 0 12px 0;
+}
+.box__innerContainer {
+  padding: 8px;
+}
+.box {
+  width: 100%;
+  /* border: 1px solid black; */
+  margin: 0 0 2px 0;
+  overflow: hidden;
+}

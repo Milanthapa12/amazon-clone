@@ -1,0 +1,31 @@
+.multiBox__container {
+  display: block;
+  width: 330px;
+  height: 420px;
+  overflow: hidden;
+  /* position: relative; */
+  background-color: #fff;
+  /* bottom: 200px; */
+  padding: 10px;
+}
+.multiBox__container h3 {
+  font-size: 18px;
+  padding: 2px 0 12px 0;
+}
+.multiBox__innerContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.multiBox {
+  width: 160px;
+  /* border: 1px solid black; */
+  margin: 0 0 4px 0;
+  overflow: hidden;
+}
+.multiBox img {
+  object-fit: contain;
+}
+.multiBox span {
+  font-size: 12px;
+}
