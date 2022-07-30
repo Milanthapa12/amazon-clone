@@ -1,5 +1,7 @@
 import { useStateValue } from "../../contexts/StateProvider";
+import { getCartTotal } from "../../reducers/reducer";
 import "./checkout.css";
+import ItemList from "./ItemList";
 
 export default function Checkout() {
   const [{ cart }, dispatch] = useStateValue();
@@ -11,13 +13,14 @@ export default function Checkout() {
           <h2 className="checkout__title">Your shopping cart</h2>
           {/* item */}
           {cart.length > 0 &&
-            cart.map((item, index) => <li key={index}>{item.title}</li>)}
+            cart.map((item, index) => <ItemList key={index} item={item} />)}
         </div>
       </div>
       <div className="checkout__right">
         <div className="subtotal">
           <p>
-            Subtotal (0 items): <strong>0</strong>
+            Subtotal ({cart.length} items):{" "}
+            <strong>{getCartTotal(cart)}</strong>
           </p>
           <small className="subtotal__gift">
             <input type="checkbox" /> This order contains a gift

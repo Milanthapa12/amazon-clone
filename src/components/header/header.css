@@ -39,6 +39,9 @@
 .header_optionLineTwo {
   font-size: 13px;
   font-weight: 800;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
 }
 .header__option {
   display: flex;
